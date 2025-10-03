@@ -103,7 +103,10 @@ const asciiToKeyEvent = {
     "/": { code: "Slash", shift: false },
     "?": { code: "Slash", shift: true },
     "`": { code: "Backquote", shift: false },
-    "~": { code: "Backquote", shift: true }
+    "~": { code: "Backquote", shift: true },
+
+    // Translate LF to Enter key
+    "\n": { code: "Enter", shift: false },
 };
 
 // Generate the full mapping for ASCII 32-126, including unmapped as undefined
