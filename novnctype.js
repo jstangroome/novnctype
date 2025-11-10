@@ -111,7 +111,7 @@ const asciiToKeyEvent = {
 
 // Generate the full mapping for ASCII 32-126, including unmapped as undefined
 const asciiMap = {};
-for (let i = 32; i <= 126; i++) {
+for (let i = 0; i <= 126; i++) {
     const ch = String.fromCharCode(i);
     asciiMap[ch] = asciiToKeyEvent[ch] || undefined;
 }
